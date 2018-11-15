@@ -1,0 +1,102 @@
+{
+  "id": "cdd61cf3-0cd7-46de-be48-2986830952bd",
+  "name": "UserProvidesBookDate",
+  "auto": true,
+  "contexts": [
+    "awaiting_book_date"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [
+        {
+          "name": "awaiting_book_time",
+          "parameters": {},
+          "lifespan": 2
+        }
+      ],
+      "parameters": [
+        {
+          "id": "f0ee8620-b88b-4794-a860-82456c068607",
+          "required": true,
+          "dataType": "@sys.date",
+          "name": "date",
+          "value": "$date",
+          "prompts": [
+            "Please enter a booking date"
+          ],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "cortanaCommand": {
+    "navigateOrService": "NAVIGATE",
+    "target": ""
+  },
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1542145611,
+  "fallbackIntent": false,
+  "events": [],
+  "userSays": [
+    {
+      "id": "886a51bd-620b-4d7c-b8db-ad1d3badeaff",
+      "data": [
+        {
+          "text": "19-10-1996",
+          "alias": "date",
+          "meta": "@sys.date",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1542143690,
+      "isAuto": false
+    },
+    {
+      "id": "33fbd447-2fc0-4376-920c-87b00f6bbbff",
+      "data": [
+        {
+          "text": "yesterday",
+          "alias": "date",
+          "meta": "@sys.date",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1542143690,
+      "isAuto": false
+    },
+    {
+      "id": "be4bd34f-cc0f-4303-80e7-8c4dc78948ce",
+      "data": [
+        {
+          "text": "tommorow",
+          "alias": "date",
+          "meta": "@sys.date",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1542143690,
+      "isAuto": false
+    }
+  ],
+  "followUpIntents": [],
+  "liveAgentHandoff": false,
+  "endInteraction": false,
+  "templates": []
+}

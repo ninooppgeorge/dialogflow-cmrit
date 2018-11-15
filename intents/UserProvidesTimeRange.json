@@ -1,0 +1,69 @@
+{
+  "id": "6ce11042-b496-4b2c-b0c5-41ef7e4b33c0",
+  "name": "UserProvidesTimeRange",
+  "auto": true,
+  "contexts": [
+    "awaiting_book_time"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "b1b4ab6e-e2d9-4b2b-9ef0-e40215103db7",
+          "required": true,
+          "dataType": "@sys.time-period",
+          "name": "timerange",
+          "value": "$timerange",
+          "prompts": [
+            "Pleas enter a time range"
+          ],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "cortanaCommand": {
+    "navigateOrService": "NAVIGATE",
+    "target": ""
+  },
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1542146282,
+  "fallbackIntent": false,
+  "events": [],
+  "userSays": [
+    {
+      "id": "dbf6310d-01b0-4ea6-a66b-e748271e7498",
+      "data": [
+        {
+          "text": "from "
+        },
+        {
+          "text": "9 am to 10 am",
+          "alias": "timerange",
+          "meta": "@sys.time-period",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1542143852,
+      "isAuto": false
+    }
+  ],
+  "followUpIntents": [],
+  "liveAgentHandoff": false,
+  "endInteraction": false,
+  "templates": []
+}

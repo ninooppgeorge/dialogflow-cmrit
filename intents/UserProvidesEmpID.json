@@ -1,0 +1,120 @@
+{
+  "id": "bbdcef9b-8c6e-4d21-9368-587b168d0d77",
+  "name": "UserProvidesEmpID",
+  "auto": true,
+  "contexts": [
+    "awaiting_empid"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [
+        {
+          "name": "awaiting_password",
+          "parameters": {},
+          "lifespan": 2
+        }
+      ],
+      "parameters": [
+        {
+          "id": "cf986f0c-6dfb-40c8-aff1-f1e932885858",
+          "required": true,
+          "dataType": "@sys.number",
+          "name": "empid",
+          "value": "$empid",
+          "prompts": [
+            "Enter your employee id"
+          ],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "cortanaCommand": {
+    "navigateOrService": "NAVIGATE",
+    "target": ""
+  },
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1542146465,
+  "fallbackIntent": false,
+  "events": [],
+  "userSays": [
+    {
+      "id": "9bb96c1e-b445-4892-86d6-d56f7c6960a0",
+      "data": [
+        {
+          "text": "my employee id is "
+        },
+        {
+          "text": "5535",
+          "alias": "empid",
+          "meta": "@sys.number",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1542146465,
+      "isAuto": false
+    },
+    {
+      "id": "19daaf95-81b3-4cbe-9287-3e3dcf77307a",
+      "data": [
+        {
+          "text": "5531",
+          "alias": "empid",
+          "meta": "@sys.number",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1542142182,
+      "isAuto": false
+    },
+    {
+      "id": "1e107caf-8c6e-48fb-9ea7-ecf1dd7d3e46",
+      "data": [
+        {
+          "text": "5331",
+          "alias": "empid",
+          "meta": "@sys.number",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1542142182,
+      "isAuto": false
+    },
+    {
+      "id": "642dff40-21e0-451c-8003-cb99b84c4f36",
+      "data": [
+        {
+          "text": "5001",
+          "alias": "empid",
+          "meta": "@sys.number",
+          "userDefined": true
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1542138979,
+      "isAuto": false
+    }
+  ],
+  "followUpIntents": [],
+  "liveAgentHandoff": false,
+  "endInteraction": false,
+  "templates": []
+}

@@ -1,0 +1,114 @@
+{
+  "id": "0332a58e-13ca-452b-9ad9-40702c34b93d",
+  "name": "UserProvidesHallName",
+  "auto": true,
+  "contexts": [
+    "awaiting_avhallname"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [
+        {
+          "name": "awaiting_book_date",
+          "parameters": {},
+          "lifespan": 2
+        }
+      ],
+      "parameters": [
+        {
+          "id": "39ef3083-69bc-4020-81fa-92a994b7d7e0",
+          "required": true,
+          "dataType": "@av_room",
+          "name": "av_room",
+          "value": "$av_room",
+          "prompts": [
+            "Please enter an AV Hall name"
+          ],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "cortanaCommand": {
+    "navigateOrService": "NAVIGATE",
+    "target": ""
+  },
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1542145946,
+  "fallbackIntent": false,
+  "events": [],
+  "userSays": [
+    {
+      "id": "94622c06-5fee-4ead-9bad-6b955799aac7",
+      "data": [
+        {
+          "text": "civil",
+          "alias": "av_room",
+          "meta": "@av_room",
+          "userDefined": true
+        },
+        {
+          "text": " av hall"
+        }
+      ],
+      "isTemplate": false,
+      "count": 2,
+      "updated": 1542143126,
+      "isAuto": false
+    },
+    {
+      "id": "c39d0e4b-4170-4e56-bec5-640d92c56908",
+      "data": [
+        {
+          "text": "mechanical",
+          "alias": "av_room",
+          "meta": "@av_room",
+          "userDefined": true
+        },
+        {
+          "text": " av hall"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1542143126,
+      "isAuto": false
+    },
+    {
+      "id": "b2094893-0d65-4f5f-96a1-fb592f3abdf9",
+      "data": [
+        {
+          "text": "i want to book "
+        },
+        {
+          "text": "mechanical",
+          "alias": "av_room",
+          "meta": "@av_room",
+          "userDefined": true
+        },
+        {
+          "text": " av hall"
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 1542143126,
+      "isAuto": false
+    }
+  ],
+  "followUpIntents": [],
+  "liveAgentHandoff": false,
+  "endInteraction": false,
+  "templates": []
+}
