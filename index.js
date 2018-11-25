@@ -2,13 +2,13 @@
 
 const functions = require('firebase-functions');
 const { WebhookClient } = require('dialogflow-fulfillment');
-const { Card, Suggestion } = require('dialogflow-fulfillment');
+//const { Card, Suggestion } = require('dialogflow-fulfillment');
 
 const admin = require('firebase-admin');
 admin.initializeApp();
 
 
-process.env.DEBUG = 'dialogflow:debug'; // enables lib debugging statements
+//process.env.DEBUG = 'dialogflow:debug';
 
 exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, response) => {
 
